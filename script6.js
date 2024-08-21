@@ -17,7 +17,7 @@ return finalChar;
 // index += 1;
 // console.log(alpha[index]);
 }
-const x = move ("z", 4);
+const x = move ("Z", 4);
 console.log(x);
 
 // move1("f");

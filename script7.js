@@ -10,7 +10,6 @@ function move(char, step) {
       return char;
     }
   }
-
   const indexChar = alpha.indexOf(char);
   let finalIndex = indexChar + step;
 
@@ -26,10 +25,13 @@ function move(char, step) {
   // index += 1;
   // console.log(alpha[index]);
 }
-const x = move("c", 4);
-console.log(x);
 
-// const y = move ("D", 6);
-// console.log(y);
+function caesarCipher(sentence, count){
+  let finalstr = "";
+  for (let i=0; i<sentence.length;i++){
+    finalstr+= move(sentence[i],count)
+  }
+    return finalstr;
+}
 
-// move1("f");
+console.log(caesarCipher("Doraemon",2));

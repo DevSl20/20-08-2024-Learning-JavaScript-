@@ -29,7 +29,7 @@ function move(char, step) {
 function caesarCipher(sentence, count){
   let finalstr = "";
   for (let i=0; i<sentence.length;i++){
-    finalstr+= move(sentence[i],count)
+    finalstr+= move(sentence[i].count)
   }
     return finalstr;
 }
